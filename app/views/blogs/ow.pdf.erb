@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>bog report</title>
+  </head>
+  <body>
+   
+    <h1>List of blogs</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th></th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= blog.title %></td>
+    <td><%= blog.content %></td>
+  </tr>
+<% end %>
+  </body>
+</html>
